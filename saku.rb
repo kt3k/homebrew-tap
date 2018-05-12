@@ -1,7 +1,11 @@
 require "formula"
+require "yaml"
 
-VERSION = "0.1.3"
-SHA256 = "54653bf2066395a21901618d55d4631a0e524595275723dd9ead3c0be855bdaa"
+
+config = YAML::load_file(File.join(__dir__, "saku.yml"))
+
+VERSION = config["version"]
+SHA256 = config["sha256"]
 
 class Saku < Formula
   desc "Markdown-based task runner"
