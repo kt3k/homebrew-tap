@@ -1,7 +1,7 @@
 require "formula"
 
-VERSION = "0.1.2"
-SHA256 = "7e50d03649e6d55d0cd31f6a6159a86d44c4bc35008159616eafd8af7525cc49"
+VERSION = "0.1.3"
+SHA256 = "54653bf2066395a21901618d55d4631a0e524595275723dd9ead3c0be855bdaa"
 
 class Saku < Formula
   desc "Markdown-based task runner"
